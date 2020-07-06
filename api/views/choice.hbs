@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="choice.css" rel="stylesheet" />
+        <link href="bootstrap.min.css" rel='stylesheet' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class='main-wrapper'>
+            <div class='topbar'>
+                <h2>Logged in.</h2>
+            </div>
+            <div class='cards d-flex flex-row flex-wrap justify-content-start align-items-start'>
+                <div class='card'>
+                    <div class='card-body'>
+                        <h5 class='card-title'>Artists</h5>
+                         <p class='card-text'>
+                             The concept behind this tool is to allow the user to discover new artists!
+                             Using this tool you can visualize and explore all the artists related to your favourites.
+                         </p>
+                        <a class='btn btn-primary' href="http://localhost:53489/artists?token={{token}}">Artists</a>
+                    </div>
+                </div>
+                <div class='card'>
+                    <div class='card-body'>
+                        <h5 class='card-title'>Devices</h5>
+                        <p class='card-text'>
+                            This tool allows you to control music playback.  The user can see
+                            the available devices, then choose from a variety of options including playing a specific
+                            playlist/song.
+                        </p>
+                        <a class='btn btn-primary'  href="http://localhost:53489/devices?token={{token}}">Devices</a>
+                    </div>
+                </div>
+                <div class='card'>
+                    <div class='card-body'>
+                        <h5 class='card-title'>Genres</h3>
+                         <p class='card-text'>Discover more about the Genres of music you listen to!
+                            This tool analyzes your top 50 artists over the past few months, and uses 
+                            the data to compile a list of your top genres!  
+                         </p>
+                        <a class='btn btn-primary' href="http://localhost:53489/genres?token={{token}}">Genres</a>
+                    </div>
+                </div>
+            </div>
+            <div class='footer'>
+
+            </div>
+        </div>
+    </body>
+</html>
